@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login - Copia.css">
+    <link rel="stylesheet" href="css/style1 - Copia.css">
+    <script src="https://kit.fontawesome.com/a703ddd776.js" crossorigin="anonymous"></script>
+    <title>Questionário</title>
+    
+</head>
+<body>
+
+<a center href="/Questionario2 - Copia.html">
+    <a href="/agradecimento - Copia (1).html"></a>
+</a>
+
+        <div class="container">
+            <div class="logo"><img src="img/logo_sim.png"></div>
+            
+                <nav>
+
+                    <section id="Questionário">
+                        <div class="container1">
+
+                            <br>
+                        
+                            <h2>PARTICIPE DO NOSSO QUESTIONÁRIO!</h2>
+                            <p>Em relação a este assunto, responda o questionamento: 
+                        <p>O que você faz para lutar e fazer com que essa situação perca a força a cada dia mais?</p>
+                            <br>
+                        </div>
+                    <br>
+                    <br>
+                    <video muted autoplay loop id="video-bg">
+                        <source src="img/bg01.mp4" type="video/mp4">
+                    </video>
+                
+                
+                    
+                    <!--FIM-->
+                
+                    <form action="https://formsubmit.co/evelynsilvapereira3@gmail.com"  method="POST"   class="form">
+                    <form action="https://formsubmit.co/belinhasantos870@gmail.com"  method="POST"   class="form">   
+                <bgcolor="white">
+                        <h1>Formulário de Opinião</h1>
+                
+                      <!--Associa à entrada - vincula o rótulo ao campo de entrada com o ID "nome" usando o for atributo.-->
+                      <form id="opinion-form">
+                        <label for="name">Diga seu nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Nome" required maxlength="50" pattern="[A-Za-zÀ-ÿ\s]+" title="Use apenas letras." />
+                    
+                        <label for="email">Seu email:</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Insira um e-mail válido." />
+                    
+                        <label for="message">Sua contribuição para a melhoria dessa questão:</label>
+                        <input for="message" name="message" placeholder="Mensagem" required />
+                    <br>
+                    <br>
+                          <button type="submit">Enviar</button>
+                    </form>
+                    
+                    <script>
+                        document.getElementById('opinion-form').addEventListener('submit', function(event) {
+                            const message = document.getElementById('message').value.trim();
+                    
+                            if (message.length < 10 || message.length > 500) {
+                                alert('Sua mensagem deve ter entre 10 e 500 caracteres.');
+                                event.preventDefault();
+                            }
+                        });
+                    </script>
+                      <!--<input type="hidden" name="_captcha"  value="false" />-->
+                      <!--Entrada oculta para redirecionamento: especifica a URL para a qual o usuário será redirecionado após o envio bem-sucedido do formulário.-->
+                      <input type="hidden" name="_next"     value="http://127.0.0.1:5500/Projeto/02%20-%20Slider/agradecimento.html"/> 
+                      <!--Entrada oculta para resposta automática: armazena uma mensagem de resposta automática a ser enviada ao usuário após o envio do formulário.-->
+                      <input type="hidden" name="_autoresponse" value="Você torna o mundo um lugar cada vez melhor !" />
+                      <!--Cria um botão de envio: aciona o processo de envio do formulário quando clicado.-->
+                      <br>
+                      <br>
+                </section>
+                
+                      
+                    </form>   
+                </nav>
+            </div>
+        </body>
+        </html>
+

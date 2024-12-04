@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/login - Copia.css" />
+    <link rel="stylesheet" href="css/style1 - Copia.css" />
+    <script src="https://kit.fontawesome.com/a703ddd776.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu">
+        <nav>
+            <a href="#Questionário">Questionário</a>
+         </nav>
+    </div>
+    <!--Video de fundo-->
+    <video muted autoplay loop id="video-bg">
+        <source src="video/bg01.mp4" type="video/mp4">
+    </video>
+
+
+    
+    <!--FIM-->
+
+    <form action="https://formsubmit.co/evelynsilvapereira3@gmail.com"  method="POST"   class="form">   
+
+        <h1>Formulário de Contato</h1>
+
+      <!--Associa à entrada - vincula o rótulo ao campo de entrada com o ID "nome" usando o for atributo.-->
+      <label for="name">Digite Nome</label>
+      <!--Cria um campo de entrada de texto: permite que o usuário insira seu nome.-->
+      <input type="text" name="name" id="name"  placeholder="Nome" required />
+      <!--Associar à entrada: vincula o rótulo ao campo de entrada com o ID "email" usando o for atributo.-->
+      <label for="email">E-mail</label>
+      <!--Cria um campo de entrada de e-mail: permite que o usuário insira seu endereço de e-mail.-->
+      <input type="email" name="email" id="email"  placeholder="E-mail"  required /><!--required-Torna o campo obrigatório, impedindo o envio do formulário sem entrada.-->
+      <!--Exibe um rótulo: indica visualmente a finalidade da seguinte área de texto.-->
+      <label for="message">Mensagem</label>
+      <!--Cria uma área de texto com várias linhas: permite que o usuário insira uma mensagem mais longa.-->
+      <textarea name="message" id="message"   placeholder="Mensagem"   required></textarea>
+
+      <!--<input type="hidden" name="_captcha"  value="false" />-->
+      <!--Entrada oculta para redirecionamento: especifica a URL para a qual o usuário será redirecionado após o envio bem-sucedido do formulário.-->
+      <input type="hidden" name="_next"     value="https://127.0.0.1:5500/contato/obrigado.html"/> 
+      <!--Entrada oculta para resposta automática: armazena uma mensagem de resposta automática a ser enviada ao usuário após o envio do formulário.-->
+      <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo contato e logo retornaremos !" />
+      <!--Cria um botão de envio: aciona o processo de envio do formulário quando clicado.-->
+      <button type="submit">Enviar</button>
+
+      
+    </form>
+  </body>
+</html>
